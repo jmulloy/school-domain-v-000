@@ -23,8 +23,9 @@ class School
   end
 
   def sort
+        binding.pry
     @roster.map{|grade, student| @roster[grade] = students.sort}
-    binding.pry
+
     @roster
   end
 end
