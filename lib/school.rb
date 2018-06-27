@@ -1,4 +1,5 @@
 # code here!
+include 'pry'
 class School
 
   attr_accessor :roster, :name
@@ -22,7 +23,8 @@ class School
   end
 
   def sort
-    @roster.map{|grade, students| @roster[grade] = students.sort}
+    @roster.map{|grade, student| @roster[grade] = students.sort}
+    binding.pry
     @roster
   end
 end
