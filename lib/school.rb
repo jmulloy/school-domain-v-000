@@ -1,5 +1,5 @@
 # code here!
-require 'pry'
+
 class School
 
   attr_accessor :roster, :name
@@ -23,9 +23,7 @@ class School
   end
 
   def sort
-        binding.pry
-    @roster.map{|grade, student| @roster[grade] = students.sort}
-
+    @roster.map{|grade, students| @roster[grade] = students.sort}
     @roster
   end
 end
